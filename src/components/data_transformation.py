@@ -12,7 +12,7 @@ from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.impute import SimpleImputer
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
-from feature_engineering import create_features
+from utils.feature_engineering import create_features, create_features_and_save_metadata
 
 from dataclasses import dataclass
 
@@ -48,7 +48,6 @@ class DataTransformation:
             cat_pipeline = Pipeline(
                 steps=[
                     ('encoder', OneHotEncoder()),
-                    ('scaler', StandardScaler(with_mean= False))
                 ]
             )
             logging.info(f'Categorical columns: {categorical_columns}')
@@ -77,8 +76,8 @@ class DataTransformation:
             logging.info('Train and test set loaded')
             logging.info('Obtaining preprocessor object')
 
-            train_df = create_features(train_df)
-            test_df = create_features(test_df)
+            train_df = create_features_and_save_metadata(train_df)
+            test_df = create_features_and_save_metadata(test_df)
 
             logging.info('New features created')
             

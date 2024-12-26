@@ -2,11 +2,15 @@ import os
 import sys
 import pandas as pd
 
+from src.components.data_transformation import DataTransformationConfig, DataTransformation
+from src.components.model_trainer import ModelTrainer, ModelTrainerConfig
+
 from utils.exception import CustomException
 from utils.logger import logging
 
 from sklearn.model_selection import train_test_split
 from dataclasses import dataclass
+import mlflow
 
 @dataclass
 class DataIngestionConfig:
@@ -40,6 +44,3 @@ class DataIngestion:
             )
         except Exception as e:
             raise CustomException(e, sys)
-if __name__ == '__main__':
-    obj = DataIngestion()
-    obj.initiate_data_ingestion()

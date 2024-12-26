@@ -3,3 +3,6 @@
 
 # Enviroment variables
 env
+loan_classification_project.egg-info
+mlruns
+logs

@@ -8,6 +8,10 @@ loan_classification_project.egg-info/top_level.txt
 src/__init__.py
 src/components/__init__.py
 src/components/data_ingestion.py
+src/components/data_transformation.py
+src/components/feature_engineering.py
+src/components/model_trainer.py
 utils/__init__.py
 utils/exception.py
 utils/logger.py
+utils/utils.py

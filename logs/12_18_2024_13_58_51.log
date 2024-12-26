@@ -1,5 +1,0 @@
-[2024-12-18 13:58:51,066] 21 root INFO - Logger configurado. Logs serão salvos em: /home/icavalca/workspace/repo/loan_classification_project/logs/12_18_2024_13_58_51.log
-[2024-12-18 13:58:52,340] 22 root INFO - Data ingestion started!
-[2024-12-18 13:58:52,429] 25 root INFO - Read the dataset as dataframe
-[2024-12-18 13:58:52,773] 31 root INFO - Train test split initiated
-[2024-12-18 13:58:53,159] 35 root INFO - Data ingestion is completed!

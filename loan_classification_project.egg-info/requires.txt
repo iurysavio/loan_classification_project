@@ -8,3 +8,8 @@ catboost
 xgboost
 dill
 streamlit
+mlflow
+pydantic
+fastapi
+uvicorn
+pylance
